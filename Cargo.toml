@@ -1,0 +1,6 @@
+[workspace]
+members = [ "day-*" ]
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
