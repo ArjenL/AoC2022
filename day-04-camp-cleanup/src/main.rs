@@ -15,7 +15,7 @@ fn main() -> Result<()> {
     let (part1, part2) = io::read_to_string(io::stdin())?
         .lines()
         .map(|line| {
-            line.split_terminator(&['-', ','])
+            line.split(&['-', ','])
                 .map(|v| v.parse::<usize>().unwrap())
                 .collect::<Vec<usize>>()
         })
